@@ -1,0 +1,125 @@
+
+  .register-containers {
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    background: transparent;
+    position: relative;
+    opacity: 0.9;
+    z-index: 1;
+    background-color: rgb(231, 229, 229);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+     
+    }
+    .Names,.pwd,.email{
+      color: rgb(6, 5, 5);
+    
+    }
+    .center-containers {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* Set height to 100% of the viewport height */
+      background-image: url('../Img/Login11.jpg');
+      background-size: cover; /* Ensure the background image covers the entire container */
+      background-position: center; /* Center the background image */
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  .registers_title{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(5, 5, 5); 
+  }
+    .center-containers {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* Set height to 100% of the viewport height */
+    }
+  
+    .form-groups {
+      margin-bottom: 15px;
+    }
+    .nametext,.emailtext,.pwdtext{
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      border: none;
+      outline: none;
+    }
+  
+  /* Register.css */
+
+/* Style for the buttons */
+.generate-otp,
+.verify-otp,
+.submit {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Style for button hover effect */
+.generate-otp:hover,
+.verify-otp:hover,
+.submit:hover {
+  background-color: #0056b3;
+}
+
+/* Register.css */
+
+/* Add responsive styles */
+@media screen and (max-width: 768px) {
+  .register-containers {
+    width: 90%; /* Adjust width to fit smaller screens */
+    padding: 10px; /* Decrease padding */
+  }
+
+
+  .registers_title {
+    font-size: 24px; /* Decrease font size for title */
+  }
+
+  .center-containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set height to 100% of the viewport height */
+    background-image: url('../Img/Login11.jpg');
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+    height: 100vh;
+  }
+  .form-groups {
+    margin-bottom: 10px; /* Decrease margin bottom for form groups */
+  }
+
+  .nametext,
+  .emailtext,
+  .pwdtext {
+    padding: 6px; /* Decrease padding for form inputs */
+    font-size: 14px; /* Decrease font size for form inputs */
+  }
+
+  .generate-otp,
+  .verify-otp,
+  .submit {
+    padding: 8px; /* Decrease padding for buttons */
+    font-size: 14px; /* Decrease font size for buttons */
+  }
+}

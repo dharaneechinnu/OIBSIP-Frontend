@@ -1,0 +1,89 @@
+/* Styles for Forget component */
+.forget-container {
+    width: 400px;
+    margin: auto;
+    margin-top: 0vh;
+    padding: 20px;
+    border-radius: 10px;
+    background: url('https://th.bing.com/th/id/OIG3.x_Tqd4ze36Krw19tYfHH?w=1024&h=1024&rs=1&pid=ImgDetMain') center center / cover; /* Background image */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Soft box shadow */
+    text-align: center;
+}
+
+.forget-wrapper {
+   
+    background-color:#ff9966; /* Set background color */
+    min-height: 100vh; /* Cover the entire viewport height */
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+/* Title styles */
+.forget-title {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Input styles */
+.forget-input {
+    width: calc(100% - 40px);
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent input background */
+    color: #333;
+    border: none;
+    outline: none;
+}
+
+/* Button styles */
+.forget-button {
+    width: calc(100% - 40px);
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #ff5e62; /* Text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Button hover effect */
+.forget-button:hover {
+    color: white;
+    background-color: #ff5e62; /* Change background color on hover */
+}
+
+/* Message styles */
+.forget-message {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .forget-container {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-top: 10vh; /* Adjust margin for smaller screens */
+    }
+
+    .forget-title {
+        font-size: 28px; /* Decrease font size for smaller screens */
+    }
+
+    .forget-input {
+        width: calc(100% - 20px); /* Adjust input width for smaller screens */
+    }
+
+    .forget-button {
+        width: calc(100% - 20px); /* Adjust button width for smaller screens */
+    }
+}

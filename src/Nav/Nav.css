@@ -1,0 +1,84 @@
+/* Nav.css */
+
+/* Main navigation container */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff00ff; /* Purple background */
+  padding: 20px;
+}
+.profile{
+  padding: 10px;
+  background-color: white;
+  border-radius: 50px;
+  color: rgba(32, 65, 7, 0.64) ;
+}
+/* Individual navigation items */
+.nav-item {
+  margin: 0 10px;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-dropdown {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff; /* White text */
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #00ff00; /* Green background */
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-item {
+  background-color: #ff0000; /* Red background */
+  border: none;
+  color: #fff; /* White text */
+  padding: 10px 30px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+
+.nav-item {
+  transform: rotate(20deg); /* Rotate items */
+  transition: transform 0.5s ease; /* Add transition */
+}
+
+.nav-item:hover {
+  transform: rotate(-20deg) scale(1.1); /* Rotate and scale on hover */
+}
+
+.dropdown-menu {
+  background-color: white; /* Yellow background */
+}
+
+.dropdown-item {
+  background-color: rgba(32, 65, 7, 0.64) ;
+}
+
+.dropdown-item:hover {
+  background-color: #fff; /* White background on hover */
+  color: rgba(32, 65, 7, 0.64) ;
+}

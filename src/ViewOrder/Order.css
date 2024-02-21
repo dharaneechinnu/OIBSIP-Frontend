@@ -1,0 +1,92 @@
+/* Order.css */
+
+/* Order container */
+.order-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Title */
+.order-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Order list */
+.order-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Order item */
+.order-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Order item paragraphs */
+.order-item p {
+  margin: 5px 0;
+}
+
+/* Order item strong */
+.order-item p strong {
+  font-weight: bold;
+}
+
+/* Status buttons container */
+.status-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Ensure buttons wrap to next line on smaller screens */
+  justify-content: center; /* Center buttons horizontally */
+}
+
+/* Status button */
+.status-buttons button {
+  padding: 10px 20px;
+  margin: 5px; /* Add some spacing between buttons */
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Status button hover effect */
+.status-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .order-container {
+    padding: 10px; /* Decrease padding on smaller screens */
+  }
+
+  .order-title {
+    font-size: 20px; /* Decrease font size for the title */
+  }
+
+  .order-item {
+    padding: 8px; /* Decrease padding for order items */
+  }
+
+  .order-item p {
+    font-size: 14px; /* Decrease font size for order item paragraphs */
+  }
+
+  .status-buttons button {
+    padding: 8px 16px; /* Decrease padding for status buttons */
+    font-size: 14px; /* Decrease font size for status buttons */
+  }
+}
+body{
+  background-color: rgba(32, 65, 7, 0.64);
+}

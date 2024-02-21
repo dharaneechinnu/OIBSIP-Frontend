@@ -1,0 +1,139 @@
+.login-container {
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  background: transparent;
+  position: relative;
+  opacity: 0.9;
+ 
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+.center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../Img/Login11.jpg');
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-position: center; /* Center the background image */
+  width: 100vw; /* Set width to 100% of viewport width */
+  height: 100vh; /* Set height to 100% of viewport height */
+  object-fit: cover;
+}
+
+/* .img-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+} */
+
+.Name,
+.password,
+p {
+  color: rgb(14, 14, 14);
+}
+
+.login_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(9, 8, 8);
+}
+
+.center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden; /* Hide overflow to prevent scrolling */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.names_text,
+.pwd_text {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  border: none;
+  outline: none;
+}
+.for{
+  position: relative;
+  bottom: 20px;
+}
+.sub_text {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #007bff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.sub_text:hover{
+  color: white;
+  background-color: #007bff;
+}
+
+/* Add responsive styles */
+@media screen and (max-width: 768px) {
+  .login-container {
+    width: 300px;
+  
+    padding: 20px;
+    border-radius: 5px;
+    background: transparent;
+    position: relative;
+    opacity: 0.9;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  }
+  .center-container{
+  height: auto;
+  }
+  
+
+  .center-container {
+    height: auto; /* Set height to auto */
+  }
+
+  .login_title {
+    font-size: 24px; /* Decrease font size */
+  }
+
+  .form-group {
+    margin-bottom: 10px; /* Decrease margin */
+  }
+
+  .names_text,
+  .pwd_text {
+    font-size: 14px; /* Decrease font size */
+  }
+
+  .for {
+    bottom: 10px; /* Adjust position */
+  }
+
+  .sub_text {
+    font-size: 14px; /* Decrease font size */
+    padding: 8px; /* Decrease padding */
+  }
+}

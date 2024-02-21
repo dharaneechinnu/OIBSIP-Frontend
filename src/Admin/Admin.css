@@ -1,0 +1,74 @@
+/* Admin.css */
+
+.admin-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+  margin-bottom: 20px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #45a049;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table-container th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.table-container tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-container tr:hover {
+  background-color: #ddd;
+}
+
+.no-orders {
+  font-style: italic;
+  color: #888;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .admin-container {
+      margin: 10px;
+      padding: 10px;
+  }
+
+  .button-container button {
+      font-size: 14px;
+  }
+
+  .table-container th,
+  .table-container td {
+      padding: 6px;
+  }
+}

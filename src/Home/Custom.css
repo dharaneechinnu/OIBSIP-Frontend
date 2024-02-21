@@ -1,0 +1,108 @@
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color:rgba(32, 65, 7, 0.64) ;
+}
+.custom-container {
+  width: 90%; /* Adjust width for smaller screens */
+  max-width: 100%; /* Limit maximum width to 100% of the viewport */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow-y: hidden;
+}
+
+.custom_Title {
+  text-align: center;
+}
+/* Add this CSS to your stylesheet */
+.Toastify__toast-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.Toastify__toast {
+  width: auto;
+  margin: 0 auto;
+}
+
+.custom-container {
+  width: 90%; /* Adjust width for smaller screens */
+  max-width: 800px; /* Limit maximum width */
+  margin: 0 auto;
+  padding: 20px;
+ 
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.custom-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid columns for responsiveness */
+  gap: 20px;
+}
+
+.custom-option {
+  margin-bottom: 20px;
+}
+
+.custom-option select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.custom-option input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.custom-option button {
+  padding: 10px 20px;
+  background-color: #14ad2b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-option button:hover {
+  background-color: #188128;
+}
+.addtocarts{
+  position: relative;
+  top: 30%;
+  left: 20%;
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .custom-container {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .custom-options {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid columns for smaller screens */
+  }
+
+  .custom-option button {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+  .addtocarts{
+    position: relative;
+    top: 30%;
+    left: 10%;
+  }
+}
