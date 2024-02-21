@@ -79,7 +79,7 @@ const Register = ({ handlesign, setName, setEmail, email, setOTP, setPassword, o
                   <label className='otp' htmlFor='otp'>Enter OTP:</label>
                   <input
                     type="text"
-                    className='emailtexts'
+                    className='emailtext'
                     onChange={(e) => setOTP(e.target.value)}
                     required
                   />
