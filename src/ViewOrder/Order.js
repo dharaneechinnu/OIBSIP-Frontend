@@ -37,9 +37,9 @@ const Order = ({userId,setPlaceorder, PlaceOrder, handleCartClick, handleLogout 
         <div className="order-container">
             <div className="nav"> <Nav handleCartClick={handleCartClick} handleLogout={handleLogout}/></div>
             <div className="status-buttons">
-                <button onClick={() => handleSortByStatus('Kitchen')}>Sort by Kitchen</button>
-                <button onClick={() => handleSortByStatus('Out for Delivery')}>Sort by Out for Delivery</button>
-                <button onClick={() => handleSortByStatus('Order Received')}>Sort by Order Received</button>
+                <button onClick={() => handleSortByStatus('Kitchen')}>Kitchen</button>
+                <button onClick={() => handleSortByStatus('Out for Delivery')}>Out for Delivery</button>
+                <button onClick={() => handleSortByStatus('Order Received')}>Order Received</button>
             </div>
             <h2 className="order-title">Order Details</h2>
             {sortedOrders.length === 0 ? (
