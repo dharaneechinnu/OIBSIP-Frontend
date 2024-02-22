@@ -389,7 +389,7 @@ const handleStatusChange = async (orderId, newStatus, updateStatusLocally) => {
   }
 />
 
-        <Route path="/admin" element={<Admin handleStatusChange={handleStatusChange} />} />
+        <Route path="/admin" element={<Admin handleStatusChange={handleStatusChange} handleLogout={handleLogout} />} />
         <Route path="/cart" element={<Cart 
            handleCartClick={handleCartClick}
         totalPrice={totalPrice}
