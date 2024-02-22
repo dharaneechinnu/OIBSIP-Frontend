@@ -13,6 +13,9 @@ import Cart from "./Cart/Cart";
 import Nav from "./Nav/Nav";
 import Order from "./ViewOrder/Order";
 
+import {  toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -53,6 +56,7 @@ function App() {
             }
         }
     } catch (error) {
+      toast.error("Email or password wrong!")
         console.error('Error in API call:', error);
     }
 };
