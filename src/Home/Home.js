@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -14,17 +15,19 @@ import Nav from '../Nav/Nav';
 const Home = ({ setUserId,handleCartClick, handleLogout }) => {
 
   const history = useNavigate()
-
+  
   
   useEffect(() => {
     const storedUserId = localStorage.getItem('userId');
     if (storedUserId) {
       setUserId(storedUserId);
+      
     }
     else{
       history('/')
     }
   }, [history, setUserId]);
+
 
 const pizzas = [
   { title: 'Chicken Cheese ', price: 300, image: chickenCheesePizza },
@@ -36,21 +39,28 @@ const pizzas = [
   { title: 'Veg Paneer', price: 299, image: vegPaneerCheesePizza }
 ];
 
+const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
   return (
     <>
    
     <div className="home-container">
       <div className="nav"> <Nav handleCartClick={handleCartClick} handleLogout={handleLogout}/></div>
-   
+  
       <div className="slo"> 
         <h2 className='slo_1'>Slice of Happiness!</h2>
         <h3 className='slo_2'>Late Time Hungry!</h3>
         <h3 className='slogan'>Experience the Best Pizza in Town!</h3>
        
-        <a href="#order" className='order-btn'>Order Now</a>
+        <a onClick={() => scrollToSection('order')} className='order-btn'>Order Now</a>
        
       </div>
-      <div className="main-outer"></div>
+    
       <div className="main" >
         <h2 className='centers' id='order'>Order Your Pizza</h2>
         <div className="shop-content" >
