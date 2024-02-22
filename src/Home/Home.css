@@ -4,6 +4,7 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
 * {
   scrollbar-width: none;
 }
@@ -86,6 +87,7 @@
   border-radius: 50px;
   opacity: 0;
   font-size: 20px;
+  cursor: pointer;
   animation: fadeIn 3s ease-in-out forwards;
   position: relative;
   top: 50%;
