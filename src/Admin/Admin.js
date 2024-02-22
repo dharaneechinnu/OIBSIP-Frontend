@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Api from '../Api/Api';
 import "./Admin.css"
 
-const Admin = () => {
+const Admin = ({handleLogout}) => {
     const [orders, setOrders] = useState([]);
 
     const handleViewOrder = async () => {
@@ -44,6 +44,7 @@ const Admin = () => {
         <div className="admin-container">
             <div className="button-container">
                 <button type="submit" onClick={handleViewOrder}>View Orders</button>
+                <button type="submit" onClick={handleLogout}>Log out</button>
             </div>
             <div className="table-container">
                 {orders.length > 0 ? (
