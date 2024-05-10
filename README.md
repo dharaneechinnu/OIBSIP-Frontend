@@ -1,3 +1,9 @@
+Login for Admin 
+E-mail:dharaneedharanchinnusamy@gmail.com
+password:dharanEE!@2005
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
