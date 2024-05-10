@@ -52,17 +52,13 @@
   padding: 10px 20px;
   margin: 5px; /* Add some spacing between buttons */
   font-size: 16px;
-  background-color: #007bff;
+  background-color: rgba(32, 65, 7, 0.64) ;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-/* Status button hover effect */
-.status-buttons button:hover {
-  background-color: #0056b3;
-}
 
 /* Media query for smaller screens */
 @media screen and (max-width: 600px) {

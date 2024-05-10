@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+
 import './Login.css'
+import { ToastContainer } from 'react-toastify';
 const Login = ({  handleSubmit,setEmail,setPassword}) => {
   return (
   <>
    <div className="center-containers">
-  
+ <ToastContainer/>
       <div className="login-container">
        
         <h2 className='login_title'>Login</h2>

@@ -46,7 +46,7 @@ const Custom = ({
             <div className="center-content">
             <div className="nav"> <Nav handleCartClick={handleCartClick} handleLogout={handleLogout}/></div>
                 <div className="custom-container">
-                    <h2 className='custom_Title'>Custom Pizza your<br/> {pizzaName}</h2>
+                    <h2 className='custom_Title'>Customize Pizza your<br/> {pizzaName}</h2>
                    
                  
                     <div className="custom-options">
